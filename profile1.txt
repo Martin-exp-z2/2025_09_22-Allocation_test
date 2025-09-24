@@ -1,0 +1,24 @@
+ Count  Overhead File                 Line Function
+ =====  ======== ====                 ==== ========
+516368    516368 REPL[10]                6 pack
+221856    221856 REPL[10]                9 pack
+    32         0 REPL[10]                2 sextets2octets(input::typeof(chars1_decoded_stateful2octets), output::typeof(discard))
+738224         0 REPL[10]               14 sextets2octets(input::typeof(chars1_decoded_stateful2octets), output::typeof(discard))
+738224         0 REPL[11]                3 chars_stateful2octets(chars::Vector{UInt8}, decoder::typeof(decode_char), output::var"#pack#1"{typeof(discard)})
+738224         0 REPL[19]                1 chars1_decoded_stateful2octets
+    32        32 @Base/boot.jl         435 Box
+738256         0 @Base/boot.jl         430 eval
+738256         0 @Base/client.jl       446 (::Base.var"#1150#1152"{Bool, Symbol, Bool})(REPL::Module)
+738256         0 @Base/client.jl       541 _start()
+738256         0 @Base/client.jl       567 repl_main
+738256         0 @Base/client.jl       430 run_main_repl(interactive::Bool, quiet::Bool, banner::Symbol, history_file::Bool, color_set::Bool)
+738256         0 @Base/essentials.jl  1055 #invokelatest#2
+738256         0 @Base/essentials.jl  1052 invokelatest
+738256         0 @REPL/src/REPL.jl     500 run_repl(repl::REPL.AbstractREPL, consumer::Any; backend_on_current_task::Bool, backend::Any)
+738256         0 @REPL/src/REPL.jl     343 start_repl_backend(backend::REPL.REPLBackend, consumer::Any; get_module::Function)
+738256         0 @REPL/src/REPL.jl     261 eval_user_input(ast::Any, backend::REPL.REPLBackend, mod::Module)
+738256         0 @REPL/src/REPL.jl     368 repl_backend_loop(backend::REPL.REPLBackend, get_module::Function)
+738256         0 @REPL/src/REPL.jl     486 run_repl(repl::REPL.AbstractREPL, consumer::Any)
+738256         0 @REPL/src/REPL.jl     340 kwcall(::NamedTuple, ::typeof(REPL.start_repl_backend), backend::REPL.REPLBackend, consumer::Any)
+Total snapshots: 92280
+Total bytes: 738256
